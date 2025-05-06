@@ -1,0 +1,19 @@
+# === Python / Django ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+venv/
+.env
+
+# === Node / React ===
+node_modules/
+build/
+.env
+.DS_Store
+
+# === General ===
+*.swp
+*.bak
+.vscode/
+*.idea/
