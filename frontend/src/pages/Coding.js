@@ -2,20 +2,29 @@ import { useState } from 'react';
 
 const codingProjects = [
   {
-    name: 'Drone Simulator',
-    description: 'A custom drone simulator using Gazebo and ArduPilot with autonomous pathfinding and gimbal control.',
-    image: '/coding/drone_sim.png',
+    name: 'Spiri SDK',
+    description: 'A software development kit for users writing code for Spiri drones.',
+    link: 'https://github.com/spiri-robotics/spiri_development_kit',
+    image: '/coding/sdk_image.png',
   },
   {
     name: 'Portfolio Website',
     description: 'This site! Built using React, Tailwind CSS, and deployed with Vercel. Includes sections for art, music, sailing, and coding.',
+    link: 'react.com/portfolio',
     image: '/coding/portfolio_site.png',
   },
   {
-    name: 'API Visualizer',
-    description: 'A Django + React webapp to visualize REST API requests/responses for educational purposes.',
-    image: '/coding/api_tool.png',
+    name: 'Take the Stand',
+    description: 'A Surealist horror game developed using Unity.',
+    link: 'https://jg-z.itch.io/take-the-stand',
+    image: '/coding/take_the_stand.png',
   },
+  {
+    name: 'Just a Job App',
+    description: 'A web application for job application tracking developed using Python, Tailwing and Docker.', 
+    link: 'https://github.com/just-a-job-app/jobseeker-analytics',
+    image: '/coding/jaja.png'
+  }
 ];
 
 export default function Coding() {
