@@ -8,22 +8,24 @@ import Sailing from './pages/Sailing';
 import Other from './pages/Other';
 import React from 'react';
 
-
 function App() {
   return (
     <Router>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/art" element={<Art />} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/coding" element={<Coding />} />
-        <Route path="/sailing" element={<Sailing />} />
-        <Route path="/sailing" element={<Other />} />
-      </Routes>
+
+      {/* Space for fixed navbar */}
+      <div className="pt-16">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/art" element={<Art />} />
+          <Route path="/music" element={<Music />} />
+          <Route path="/coding" element={<Coding />} />
+          <Route path="/sailing" element={<Sailing />} />
+          <Route path="/other" element={<Other />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
-
 
 export default App;

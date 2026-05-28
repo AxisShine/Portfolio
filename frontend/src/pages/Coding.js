@@ -2,16 +2,10 @@ import { useState } from 'react';
 
 const codingProjects = [
   {
-    name: 'Spiri SDK',
-    description: 'A software development kit for users writing code for Spiri drones.',
-    link: 'https://github.com/spiri-robotics/spiri_development_kit',
-    image: '/coding/sdk_image.png',
-  },
-  {
-    name: 'Portfolio Website',
-    description: 'This site! Built using React, Tailwind CSS, and deployed with Vercel. Includes sections for art, music, sailing, and coding.',
-    link: 'react.com/portfolio',
-    image: '/coding/portfolio_site.png',
+    name: 'Immigreat',
+    description: 'An AI chatbot designed to assist Canadian immigrants with their application process.',
+    link: 'https://github.com/UofT-CSC490-F2025/Immigreat',
+    image: '/coding/immigreat.png'
   },
   {
     name: 'Take the Stand',
@@ -21,9 +15,19 @@ const codingProjects = [
   },
   {
     name: 'Just a Job App',
-    description: 'A web application for job application tracking developed using Python, Tailwing and Docker.', 
+    description: 'A web application for job application tracking developed using Python, TypeScript, and Docker.', 
     link: 'https://github.com/just-a-job-app/jobseeker-analytics',
     image: '/coding/jaja.png'
+  },
+  {
+    name: 'Spiri SDK',
+    description: 'A software development kit for users writing code for Spiri drones.',
+    link: 'https://github.com/spiri-robotics/spiri_development_kit',
+    image: '/coding/sdk_image.png',
+  },
+  {
+    name: 'Portfolio Website',
+    description: 'This site! Built using Java, CSS, and HTML.',
   }
 ];
 
@@ -35,7 +39,7 @@ export default function Coding() {
     <div className="min-h-screen bg-gradient-to-br from-[#0a0f1c] via-[#1c2541] to-[#0b132b] text-white flex">
       {/* Sidebar */}
       <aside className="w-64 bg-white/5 border-r border-white/10 p-4 space-y-4">
-        <h2 className="text-xl font-heading text-blue-300 mb-4">Projects</h2>
+        <h2 className="text-xl font-heading text-blue-300 mb-4">Coding Projects!</h2>
         {codingProjects.map((project, index) => (
           <div key={index}>
             <button
@@ -64,14 +68,31 @@ export default function Coding() {
         <h1 className="text-3xl font-bold text-pink-300 mb-6">
           {codingProjects[activeTab].name}
         </h1>
+
         <p className="text-lg text-blue-100 mb-4">
           {codingProjects[activeTab].description}
         </p>
-        <img
-          src={codingProjects[activeTab].image}
-          alt={codingProjects[activeTab].name}
-          className="max-w-2xl w-full rounded-md shadow-xl border border-white/10"
-        />
+
+        {codingProjects[activeTab].image && (
+          <img
+            src={codingProjects[activeTab].image}
+            alt={codingProjects[activeTab].name}
+            className="max-w-2xl w-full rounded-md shadow-xl border border-white/10"
+          />
+        )}
+
+        {codingProjects[activeTab].link && (
+          <p className="mt-4">
+            <a
+              href={codingProjects[activeTab].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              View Project
+            </a>
+          </p>
+        )}
       </main>
     </div>
   );

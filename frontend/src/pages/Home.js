@@ -30,7 +30,7 @@ export default function Home() {
         <h2 className="text-2xl font-heading text-pink-300 mb-4 border-b border-pink-500 inline-block">
           Skills
         </h2>
-        <ul className="grid md:grid-cols-3 gap-3 text-base md:text-lg text-blue-100 list-disc list-inside">
+        <ul className="grid md:grid-cols-3 gap-3 text-base md:text-sm text-blue-50 list-disc list-inside marker:text-[10px]">
           <li>Python</li>
           <li>Java</li>
           <li>React</li>
@@ -39,7 +39,21 @@ export default function Home() {
           <li>Figma & Design</li>
           <li>Git & GitHub</li>
           <li>REST APIs</li>
-          <li>HTML, CSS, JS</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>R</li>
+          <li>C</li>
+          <li>Unix</li>
+          <li>Unity</li>
+          <li>Godot</li>
+          <li>Cursor</li>
+          <li>VS code</li>
+          <li>Docker</li>
+          <li>Agile & Scrum</li>
+          <li>Team Leadership</li>
+          <li>Public Speaking</li>
+          <li>Microsoft Office</li>
         </ul>
       </section>
 
