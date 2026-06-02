@@ -1,20 +1,20 @@
 export default function Sailing() {
   const sailingStories = [
     {
-      title: "Racing the 8-Metre Nationals",
-      description: "Crewed aboard *Norway's Challenge* in a weeklong regatta on Lake Ontario. I handled spinnaker trim in high wind conditions — a challenging and exhilarating experience.",
-      image: "/sailing/8m_race.jpg",
-      link: "https://your-portfolio-site.com/8m-nationals",
+      title: "Brigs Youth Sail Training ~ Pathfinder and Playfair",
+      description: "Crewed aboard Pathfinder and Playfair as a Senior Watch Officer. Sailed the Great Lakes in Canada.",
+      image: "/sailing/brigs.jpg",
+      link: "https://brigs-youth-sail-training",
     },
     {
-      title: "Overnight Crossing to Niagara",
-      description: "Planned and captained a solo overnight trip from Toronto to Niagara-on-the-Lake. Navigated through changing wind patterns, maintained logbook, and tracked position using charts and compass.",
-      image: "/sailing/niagara_crossing.jpg",
+      title: "ATYLA",
+      description: "2 weeks as a trainee on board ATYLA thanks to their international scholarship program. Sailed along the coast of Spain and Portugal.",
+      image: "/sailing/atyla.jpg",
     },
     {
-      title: "Sailing Club Executive Work",
-      description: "As VP of Operations at UofT Sailing, I organized fleet maintenance and training sessions. Developed onboarding documents and led safety briefings for novice sailors.",
-      video: "/sailing/club_footage.mp4",
+      title: "Windeward Bound",
+      description: "Crewed on board ATYLA for 7 months as a senior Deckhand and White Watch Leader. Sailed along the Southen coast of Tasmania",
+      image: "/sailing/windeward_bound.png",
     },
   ];
 
@@ -22,7 +22,7 @@ export default function Sailing() {
     <div className="min-h-screen bg-gradient-to-br from-[#00111c] via-[#072b40] to-[#0d1e2d] text-white px-4 py-12">
       <section className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-heading text-blue-200 font-bold mb-12 text-center drop-shadow-md">
-          Sailing Logs & Leadership
+          Sailing Experience
         </h1>
         <div className="space-y-10">
           {sailingStories.map((story, idx) => (
