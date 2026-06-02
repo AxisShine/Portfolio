@@ -28,7 +28,13 @@ const codingProjects = [
   {
     name: 'Portfolio Website',
     description: 'This site! Built using Java, CSS, and HTML.',
-  }
+    image: '/coding/portfolio_image.png'
+  },
+  {
+    name: 'Glenn the Goblin',
+    description: 'Game jam game made with classmates.',
+    image: '/coding/glenn_the_goblin.png'
+  },
 ];
 
 export default function Coding() {

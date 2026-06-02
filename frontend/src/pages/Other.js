@@ -1,30 +1,30 @@
 const miscProjects = [
   {
-    title: 'LED Light Show',
-    description: 'An Arduino-powered LED installation that reacts to music.',
-    image: 'https://placekitten.com/300/200',
+    title: 'UTRA ART',
+    description: 'University of Toronto Autonomous Rover Team, mechanical team member for 2 years.',
+    image: '/other/ART1.png',
   },
   {
-    title: 'Spontaneous Poetry Generator',
-    description: 'A chaotic text generator that assembles found words into poetry.',
-    image: 'https://placekitten.com/301/200',
+    title: 'UTRA Hacks',
+    description: 'Robotics Hackathon hosted by University of Toronto Robotics Association, participated twice building a small autonomous rover.',
+    image: '/other/UTRAhacks3.png',
+    video: '/other/UTRAhacks4.mov',
   },
   {
-    title: 'Urban Foraging App',
-    description: 'Helps users identify edible plants in their local area.',
-    image: 'https://placekitten.com/302/200',
+    title: 'Costuming',
+    description: 'Homemade Halloween Costumes and performance costumes.',
+    image: '/other/ernie_cosplay3.jpeg',
   },
   {
-    title: 'Soundscape Maker',
-    description: 'Layer and manipulate field recordings to make ambient compositions.',
-    image: 'https://placekitten.com/303/200',
+    title: 'Writing',
+    description: 'Some writing I have done.',
   },
 ];
 
 export default function MiscPage() {
   return (
     <div className="min-h-screen px-6 py-10 bg-gradient-to-br from-yellow-300 via-pink-300 to-purple-400 text-gray-900 font-sans overflow-x-hidden">
-      <h1 className="text-center text-5xl font-bold drop-shadow-lg mb-10">Miscellaneous Magic</h1>
+      <h1 className="text-center text-5xl font-bold drop-shadow-lg mb-10">More Fun!</h1>
 
       <div className="grid gap-6 grid-cols-2 md:grid-cols-6 auto-rows-[200px]">
         {miscProjects.map((project, i) => (

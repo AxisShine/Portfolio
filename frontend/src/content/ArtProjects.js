@@ -147,7 +147,7 @@ const artProjects = [
       title: "Corner Store",
       materials: "Pencil and Charcoal on PosterBoard",
       description: "A Journal from childhood.",
-      image: "/art/mirror1.png",
+      image: "/art/mirror1.jpeg",
       link: "art/",
     },
     {

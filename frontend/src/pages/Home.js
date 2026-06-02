@@ -19,9 +19,7 @@ export default function Home() {
           About Me
         </h2>
         <p className="text-base md:text-lg text-blue-100 leading-relaxed">
-          I'm a passionate developer and creative problem solver with experience in building drone simulation software,
-          leading sailing crews on Lake Ontario, and designing for both web and print. I blend technical skill and artistic expression
-          into everything I do — whether it's coding, sailing, or singing.
+          I'm a passionate developer and creative problem solver with experience in software and game development, physics simulation, tall ship sailing, visual art, music, and leadership roles.
         </p>
       </section>
 

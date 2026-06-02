@@ -1,21 +1,30 @@
 export default function Music() {
   const musicProjects = [
     {
-      title: "Take the Stand OST",
-      description: "Original soundtrack for my narrative game. Features piano, synth, and vocal layering to match emotional beats in the story.",
-      audio: "/music/take_the_stand_theme.mp3",
+      title: "Candy Rush",
+      description: "Original Song",
+      audio: "/music/candy_rush.m4a",
+      image: "/art/candy_rush.png",
       link: "https://jg-z.itch.io/take-the-stand",
     },
     {
-      title: "Sea Shanty Covers",
-      description: "A personal recording project reimagining old sailing songs with layered harmonies and modern acoustic twists.",
-      video: "/music/shanty_demo.mp4",
+      title: "Call my name",
+      description: "Original Song",
+      audio: "/music/call_my_name.mp4",
+      image: "/music/call_my_name_cover.png",
     },
     {
-      title: "UofT Jazz Ensemble",
-      description: "Sang alto and performed student arrangements at university events and recitals. Developed ensemble dynamics and improv comfort.",
-      image: "/music/ensemble.jpg",
+      title: "New Resonance",
+      description: "Performed with New Resonance at the University of Toronto for 4 years, sang Soprano.",
+      video: "/music/new_res.mp4",
+      link: "https://youtube.com/New_College_Resonance",
     },
+    {
+      title: "Toronto Children's Chorus",
+      description: "Performed with Toronto Children's Chorus for 10 years.",
+      video: "music/ttc.mp4",
+      link: "https://ttc.com"
+    }
   ];
 
   return (
