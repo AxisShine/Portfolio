@@ -28,7 +28,6 @@ const codingProjects = [
   {
     name: 'Portfolio Website',
     description: 'This site! Built using Java, CSS, and HTML.',
-    image: '/coding/portfolio_image.png'
   },
   {
     name: 'Glenn the Goblin',

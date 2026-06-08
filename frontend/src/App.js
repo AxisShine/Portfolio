@@ -14,7 +14,7 @@ function App() {
       <NavBar />
 
       {/* Space for fixed navbar */}
-      <div className="pt-16">
+      <div className="pt-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/art" element={<Art />} />

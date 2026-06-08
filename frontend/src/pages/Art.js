@@ -27,7 +27,8 @@ export default function Art() {
                   className="rounded-md mb-4 object-cover h-48 w-full"
                 />
               )}
-              <h2 className="text-xl font-semibold text-pink-200 mb-2">{project.title}</h2>
+              <h2 className="text-xl font-semibold text-pink-200 mb-1">{project.title}</h2>
+              <p className="text-pink-300 text-sm mb-1">{project.materials}</p>
               <p className="text-blue-100 text-sm mb-3">{project.description}</p>
               {project.link && (
                 <a

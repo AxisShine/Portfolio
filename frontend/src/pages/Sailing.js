@@ -2,17 +2,23 @@ export default function Sailing() {
   const sailingStories = [
     {
       title: "Brigs Youth Sail Training ~ Pathfinder and Playfair",
+      role: "Senior Watch Officer",
+      date: "June 2019 - May 2024",
       description: "Crewed aboard Pathfinder and Playfair as a Senior Watch Officer. Sailed the Great Lakes in Canada.",
       image: "/sailing/brigs.jpg",
       link: "https://brigs-youth-sail-training",
     },
     {
       title: "ATYLA",
+      role: "Trainee",
+      date: "August - September 2021",
       description: "2 weeks as a trainee on board ATYLA thanks to their international scholarship program. Sailed along the coast of Spain and Portugal.",
       image: "/sailing/atyla.jpg",
     },
     {
       title: "Windeward Bound",
+      role: "Senior Deckhand and White Watch Leader",
+      date: "Jan 2026 - August 2026",
       description: "Crewed on board ATYLA for 7 months as a senior Deckhand and White Watch Leader. Sailed along the Southen coast of Tasmania",
       image: "/sailing/windeward_bound.png",
     },
@@ -46,6 +52,12 @@ export default function Sailing() {
               )}
               <div className="p-6">
                 <h2 className="text-2xl font-semibold text-sky-300 mb-2">{story.title}</h2>
+                <h2 className="text-1xl font-semibold text-blue-200 mb-2">
+                  {story.role}
+                </h2>
+                <h2 className="text-1xl font-semibold text-blue-100 mb-2">
+                  {story.date}
+                </h2>
                 <p className="text-blue-100 text-base leading-relaxed mb-4">
                   {story.description}
                 </p>
