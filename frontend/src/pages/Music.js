@@ -5,7 +5,7 @@ export default function Music() {
       description: "Original Song",
       audio: "/music/candy_rush.m4a",
       image: "/art/candy_rush.png",
-      link: "https://jg-z.itch.io/take-the-stand",
+      link: "https://www.youtube.com/watch?v=7qd0uDSfoek",
     },
     {
       title: "Call my name",
@@ -16,14 +16,14 @@ export default function Music() {
     {
       title: "New Resonance",
       description: "Performed with New Resonance at the University of Toronto for 4 years, sang Soprano.",
-      video: "/music/new_res.mp4",
-      link: "https://youtube.com/New_College_Resonance",
+      video: "https://www.youtube.com/watch?v=LG6pS216WuM",
+      link: "https://www.youtube.com/@newcollegeresonance",
     },
     {
       title: "Toronto Children's Chorus",
       description: "Performed with Toronto Children's Chorus for 10 years.",
-      video: "music/ttc.mp4",
-      link: "https://ttc.com"
+      video: "https://www.youtube.com/watch?v=QBJ4jtPkF90",
+      link: "https://www.torontochildrenschorus.com/"
     }
   ];
 
@@ -47,10 +47,14 @@ export default function Music() {
                 />
               )}
               {item.video && (
-                <video
-                  src={item.video}
-                  controls
-                  className="w-full h-48 object-cover rounded-md mb-4"
+                <iframe
+                  src={`https://www.youtube.com/embed/${
+                    item.video.split("v=")[1]
+                  }`}
+                  title={item.title}
+                  className="w-full h-48 rounded-md mb-4"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
               )}
               {item.audio && (

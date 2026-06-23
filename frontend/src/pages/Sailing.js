@@ -5,8 +5,9 @@ export default function Sailing() {
       role: "Senior Watch Officer",
       date: "June 2019 - May 2024",
       description: "Crewed aboard Pathfinder and Playfair as a Senior Watch Officer. Sailed the Great Lakes in Canada.",
-      image: "/sailing/brigs.jpg",
-      link: "https://brigs-youth-sail-training",
+      image: "/sailing/brigs.jfif",
+      link: "https://www.brigs.ca/",
+      video: "https://www.youtube.com/watch?v=HOxWcEFsa7Y",
     },
     {
       title: "ATYLA",
@@ -14,13 +15,15 @@ export default function Sailing() {
       date: "August - September 2021",
       description: "2 weeks as a trainee on board ATYLA thanks to their international scholarship program. Sailed along the coast of Spain and Portugal.",
       image: "/sailing/atyla.jpg",
+      link: "https://atyla.org/",
     },
     {
       title: "Windeward Bound",
       role: "Senior Deckhand and White Watch Leader",
       date: "Jan 2026 - August 2026",
       description: "Crewed on board ATYLA for 7 months as a senior Deckhand and White Watch Leader. Sailed along the Southen coast of Tasmania",
-      image: "/sailing/windeward_bound.png",
+      image: "/sailing/windy.webp",
+      link: "https://www.windewardbound.com.au/",
     },
   ];
 
@@ -36,21 +39,26 @@ export default function Sailing() {
               key={idx}
               className="bg-white/5 border border-white/10 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-400/30 transition-shadow"
             >
-              {story.image && (
-                <img
-                  src={story.image}
-                  alt={story.title}
-                  className="w-full object-cover h-64 sm:h-80 md:h-96"
-                />
-              )}
-              {story.video && (
-                <video
-                  src={story.video}
-                  controls
-                  className="w-full object-cover h-64 sm:h-80 md:h-96"
-                />
-              )}
-              <div className="p-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 gap-4">
+                  {story.image && (
+                    <img
+                      src={story.image}
+                      alt={story.title}
+                      className="w-full aspect-video object-cover rounded-lg"
+                    />
+                  )}
+
+                  {story.video && (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${story.video.split("v=")[1]}`}
+                      title={story.title}
+                      className="w-full aspect-video rounded-lg"
+                      allowFullScreen
+                    />
+                  )}
+                </div>
+                <div className="p-6 flex flex-col justify-center">
                 <h2 className="text-2xl font-semibold text-sky-300 mb-2">{story.title}</h2>
                 <h2 className="text-1xl font-semibold text-blue-200 mb-2">
                   {story.role}
@@ -72,6 +80,7 @@ export default function Sailing() {
                   </a>
                 )}
               </div>
+            </div>
             </div>
           ))}
         </div>
