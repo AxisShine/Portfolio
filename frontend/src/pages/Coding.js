@@ -5,25 +5,25 @@ const codingProjects = [
     name: 'Immigreat',
     description: 'An AI chatbot designed to assist Canadian immigrants with their application process.',
     link: 'https://github.com/UofT-CSC490-F2025/Immigreat',
-    image: process.env.PUBLIC_URL + '/coding/immigreat.png'
+    image: 'coding/immigreat.png'
   },
   {
     name: 'Take the Stand',
     description: 'A Surealist horror game developed using Unity.',
     link: 'https://jg-z.itch.io/take-the-stand',
-    image: process.env.PUBLIC_URL + '/coding/take_the_stand.png',
+    image: 'coding/take_the_stand.png',
   },
   {
     name: 'Just a Job App',
     description: 'A web application for job application tracking developed using Python, TypeScript, and Docker.', 
     link: 'https://github.com/just-a-job-app/jobseeker-analytics',
-    image: process.env.PUBLIC_URL + '/coding/jaja.png'
+    image: 'coding/jaja.png'
   },
   {
     name: 'Spiri SDK',
     description: 'A software development kit for users writing code for Spiri drones.',
     link: 'https://github.com/spiri-robotics/spiri_development_kit',
-    image: process.env.PUBLIC_URL + '/coding/sdk_image.png',
+    image: 'coding/sdk_image.png',
   },
   {
     name: 'Portfolio Website',
@@ -32,7 +32,7 @@ const codingProjects = [
   {
     name: 'Glenn the Goblin',
     description: 'Game jam game made with classmates.',
-    image: process.env.PUBLIC_URL + '/coding/glenn_the_goblin.png'
+    image: 'coding/glenn_the_goblin.png'
   },
 ];
 
