@@ -5,7 +5,7 @@ export default function Sailing() {
       role: "Senior Watch Officer",
       date: "June 2019 - May 2024",
       description: "Crewed aboard Pathfinder and Playfair as a Senior Watch Officer. Sailed the Great Lakes in Canada.",
-      image: "/sailing/brigs.jfif",
+      image: "sailing/brigs.jfif",
       link: "https://www.brigs.ca/",
       video: "https://www.youtube.com/watch?v=HOxWcEFsa7Y",
     },
@@ -14,7 +14,7 @@ export default function Sailing() {
       role: "Trainee",
       date: "August - September 2021",
       description: "2 weeks as a trainee on board ATYLA thanks to their international scholarship program. Sailed along the coast of Spain and Portugal.",
-      image: "/sailing/atyla.jpg",
+      image: "sailing/atyla.jpg",
       link: "https://atyla.org/",
     },
     {
@@ -22,7 +22,7 @@ export default function Sailing() {
       role: "Senior Deckhand and White Watch Leader",
       date: "Jan 2026 - August 2026",
       description: "Crewed on board ATYLA for 7 months as a senior Deckhand and White Watch Leader. Sailed along the Southen coast of Tasmania",
-      image: "/sailing/windy.webp",
+      image: "sailing/windy.webp",
       link: "https://www.windewardbound.com.au/",
     },
   ];

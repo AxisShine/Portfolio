@@ -4,14 +4,14 @@ export default function Music() {
       title: "Candy Rush",
       description: "Original Song",
       audio: "/music/candy_rush.m4a",
-      image: "/art/candy_rush.png",
+      image: "art/candy_rush.png",
       link: "https://www.youtube.com/watch?v=7qd0uDSfoek",
     },
     {
       title: "Call my name",
       description: "Original Song",
       audio: "/music/call_my_name.mp4",
-      image: "/music/call_my_name_cover.png",
+      image: "music/call_my_name_cover.png",
     },
     {
       title: "New Resonance",
